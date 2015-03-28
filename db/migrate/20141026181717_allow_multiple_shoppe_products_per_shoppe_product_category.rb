@@ -15,13 +15,13 @@ class AllowMultipleShoppeProductsPerShoppeProductCategory < ActiveRecord::Migrat
                  :foreign_key => "product_category_id"
     end
     # migrate over to our new join table
-    Shoppe::Product.all.each do |product|
-      product.product_categories << product.old_category
-      product.save
-    end
+    #Shoppe::Product.all.each do |product|
+    #  product.product_categories << product.old_category
+    #  product.save
+    #end
     # lastly, remove the old product_category_id and associated index
-    remove_index :shoppe_products, :product_category_id if index_exists?(:shoppe_products, :product_category_id)
-    remove_column :shoppe_products, :product_category_id
+    #remove_index :shoppe_products, :product_category_id if index_exists?(:shoppe_products, :product_category_id)
+    #remove_column :shoppe_products, :product_category_id
   end
 
   def down
