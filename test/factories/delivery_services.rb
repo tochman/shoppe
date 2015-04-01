@@ -25,8 +25,8 @@ module Shoppe
         end
         
         after(:create) do |service, evaluator|
-          country_ids = evaluator.country_ids
-          FactoryGirl.create(:delivery_price, :delivery_service => service, :country_ids => country_ids)
+          country_id = evaluator.country_id
+          FactoryGirl.create(:delivery_price, :delivery_service => service, :country_ids => country_id)
           FactoryGirl.create(:delivery_price, :delivery_service => service, :min_weight => 1, :max_weight => 10, :price => 8.0, :cost_price => 4.0, :country_ids => country_ids)
           FactoryGirl.create(:delivery_price, :delivery_service => service, :min_weight => 10, :max_weight => 50, :price => 12.0, :cost_price => 6.0, :country_ids => country_ids)
         end
