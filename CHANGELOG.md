@@ -1,12 +1,63 @@
-# Shoppe Release Notes
+# Shoppe Change Log
 
-This document outlines key changes which are introduced in each version. The full commit history can be found [on GitHub](http://github.com/tryshoppe/core).
+All notable changes to this project will be documented in this file.
 
-## v1.0.6 (Master)
+The full commit history can be found [on GitHub](http://github.com/tryshoppe/core).
 
+## Unreleased
 * ...
 
-## v1.0.5 (Stable)
+## 1.1.2 - 2015-12-02
+
+* Added missing es-US translation ([#258](https://github.com/tryshoppe/shoppe/pull/258))
+* Added missing translation that failed to save categories ([#261](https://github.com/tryshoppe/shoppe/pull/261))
+* Fix bug with product variants ([#262](https://github.com/tryshoppe/shoppe/pull/262))
+* Fix issue with attachment uploader ([#266](https://github.com/tryshoppe/shoppe/pull/266))
+* Adjusted phone number regex ([#276](https://github.com/tryshoppe/shoppe/pull/276))
+* Added missing German translations ([#280](https://github.com/tryshoppe/shoppe/pull/280))
+* Fixed `login_with_demo_mode` typo ([#281](https://github.com/tryshoppe/shoppe/pull/281))
+* Fixed cut off payment button ([#282](https://github.com/tryshoppe/shoppe/pull/282))
+* Fixed products import ([#285](https://github.com/tryshoppe/shoppe/pull/285))
+* Update quantities on product import ([#286](https://github.com/tryshoppe/shoppe/pull/286))
+* Added German translations to Customer section ([#287](https://github.com/tryshoppe/shoppe/pull/287))
+* Improved Spanish translation ([#289](https://github.com/tryshoppe/shoppe/pull/289))
+* Added Russian translation ([#295](https://github.com/tryshoppe/shoppe/pull/295))
+* Fixed cost price German translation ([#299](https://github.com/tryshoppe/shoppe/pull/299))
+* Fixed seeds when run twice ([#300](https://github.com/tryshoppe/shoppe/pull/300))
+* Updated to Ruby 1.9 syntax ([#304](https://github.com/tryshoppe/shoppe/pull/304))
+
+## 1.1.1 - 2015-08-09
+
+* Bug with default_image_file ([#244](https://github.com/tryshoppe/shoppe/pull/244))
+
+## 1.1.0 - 2015-07-07
+
+* Bug with product category translations
+* Product category image uploads
+
+## v1.0.9
+
+* Attachments ([#211](https://github.com/tryshoppe/shoppe/pull/211))
+* Added rake task to help with migration from nifty-attachments to Attachments
+* Fixed translation ([#205](https://github.com/tryshoppe/shoppe/pull/205))
+
+## v1.0.8
+
+* Localisations / Translations for Products & Product Categories
+* Customers & Addresses ([#167](https://github.com/tryshoppe/shoppe/pull/167))
+
+## v1.0.7
+
+* Fix to seeds
+* Product category hierarchy_array ([#194](https://github.com/tryshoppe/shoppe/pull/194))
+
+## v1.0.6
+
+* German translations ([#180](https://github.com/tryshoppe/shoppe/pull/180))
+* Multiple product categories with nesting ([#137](https://github.com/tryshoppe/shoppe/pull/137))
+* Added refund callback to Payment model 
+
+## v1.0.5
 
 * Added Customers ([#119](https://github.com/tryshoppe/shoppe/pull/119))
 

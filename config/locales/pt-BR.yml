@@ -402,6 +402,7 @@ pt-BR:
         hierarchy: Hierarchy
 
     products:
+      add_attachments: Visualizar/adicionar anexos
       add_attribute: Adicionar atributo
       attachments: Anexos
       attributes: Atributos
@@ -447,13 +448,14 @@ pt-BR:
       website_properties: Propriedades do Site
       weight: Peso
 
-      imports: 
-        help: Products and Categories are matched by name.  If no product is found, a new one will be created with all the attributes on the line.  If a product is found, only the quantity will be updated and all other fields will be ignored.  If no category is found, one with that name will be created .  One product per line.  
+      imports:
+        help: Products and Categories are matched by name.  If no product is found, a new one will be created with all the attributes on the line.  If a product is found, only the quantity will be updated and all other fields will be ignored.  If no category is found, one with that name will be created .  One product per line. Você pode deixar permalink campo vazio se você não quiser adicionar um e para ser gerado automaticamente.
         success: Produtos importados com sucesso
         examples:
           first:
             name: Plush Teddy Bear
             sku: BEAR001
+            permalink: plush-teddy-bear
             description: Fantastically plush. Very cuddly. Great for all ages.
             short_description: Buy this for your kids.
             weight: 1.2
@@ -463,6 +465,7 @@ pt-BR:
           second:
             name: Standard Teddy Bear
             sku: BEAR002
+            permalink: ""
             description: Made out of PVC. A little cuddly. Spill resistant.
             short_description: Buy this for those with two left thumbs.
             weight: 0.6
@@ -472,6 +475,7 @@ pt-BR:
           third:
             name: Stick Teddy Bear
             sku: BEAR003
+            permalink: stick-teddy-bear
             description: Made out of sticks. Not really cuddly. All natural. Fire hazard.
             short_description: Buy this for that distant aunt who collects bears.
             weight: 0.521
@@ -590,6 +594,11 @@ pt-BR:
       destroy_notice: O Pagamento foi removido com sucesso
       refund_notice: A Devolução foi processada com sucesso.
 
+    addresses:
+      created_successfully: Address has been created successfully.
+      updated_successfully: Address has been updated successfully.
+      deleted_successfully: Address has been deleted successfully.
+
     navigation:
       admin_primary:
         orders: Pedidos
@@ -600,6 +609,7 @@ pt-BR:
         users: Usuários
         countries: Países
         settings: Preferências
+        customers: Clientes
 
     settings:
 
